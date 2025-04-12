@@ -9,7 +9,7 @@ try {
 
 // Пагинация
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-$limit = 3; // Количество заказов на странице
+$limit = 3;
 $offset = ($page - 1) * $limit;
 
 // Получение общего количества заказов
@@ -35,7 +35,7 @@ $statuses = [
     'Отменен' => '0fc64a5e-059f-11f0-0a80-19740012ce57'
 ];
 
-// Функция для получения цвета статуса (PHP)
+// Функция для получения цвета статуса
 function getStatusColor($status) {
     $colors = [
         'Новый' => '#4a90e2',
@@ -46,7 +46,7 @@ function getStatusColor($status) {
         'Возврат' => '#e74c3c',
         'Отменен' => '#95a5a6'
     ];
-    return $colors[$status] ?? '#ccc'; // Возвращаем цвет или серый (#ccc), если статус не найден
+    return $colors[$status] ?? '#ccc';
 }
 ?>
 
