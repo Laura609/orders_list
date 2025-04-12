@@ -2,18 +2,18 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-// Подключаем настройки API
+// Подключение API
 require_once 'moysklad_settings.php';
 $apiSettings = include('moysklad_settings.php');
 
-// Подключаем функции для работы с cURL
+// Подключение функции для работы с cURL
 require_once 'moysklad_curl.php';
 
 try {
     // Логирование GET-параметров
     file_put_contents('debug.log', "GET Parameters: " . print_r($_GET, true) . "\n", FILE_APPEND);
 
-    // Получаем ID заказа из GET-параметра
+    // ID заказа из GET-параметра
     if (empty($_GET['id'])) {
         throw new Exception('ID заказа не указан.');
     }
@@ -36,7 +36,7 @@ try {
 
     // Очистка данных от лишних символов
     $rawData = trim($rawData);
-    $rawData = preg_replace('/[\x00-\x1F\x7F]/u', '', $rawData); // Удаление управляющих символов
+    $rawData = preg_replace('/[\x00-\x1F\x7F]/u', '', $rawData);
 
     // Проверка формата JSON
     $data = json_decode($rawData, true);
