@@ -6,7 +6,7 @@ function setupCurl($apiSettings)
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_FOLLOWLOCATION, false);
-    curl_setopt($curl, CURLOPT_ENCODING, 'gzip'); // Обработка gzip-кодирования
+    curl_setopt($curl, CURLOPT_ENCODING, 'gzip');
 
     // Добавляем заголовки
     curl_setopt($curl, CURLOPT_HTTPHEADER, [
