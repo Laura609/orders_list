@@ -8,7 +8,7 @@ function setupCurl($apiSettings)
     curl_setopt($curl, CURLOPT_FOLLOWLOCATION, false);
     curl_setopt($curl, CURLOPT_ENCODING, 'gzip');
 
-    // Добавляем заголовки
+  
     curl_setopt($curl, CURLOPT_HTTPHEADER, [
         'Authorization: Bearer ' . $apiSettings['MOYSKLAD_API_TOKEN'],
         'Content-Type: application/json',
