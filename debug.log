@@ -1,0 +1,72 @@
+GET Parameters: Array
+(
+    [id] => 51
+)
+
+Raw POST Data: {"status":"Подтвержден","ms_id":"3f4cc254-1773-11f0-0a80-0ed1003386f0"}
+Decoded Data: Array
+(
+    [status] => Подтвержден
+    [ms_id] => 3f4cc254-1773-11f0-0a80-0ed1003386f0
+)
+
+GET Parameters: Array
+(
+    [id] => 51
+)
+
+Raw POST Data: {"status":"Новый","ms_id":"3f4cc254-1773-11f0-0a80-0ed1003386f0"}
+Decoded Data: Array
+(
+    [status] => Новый
+    [ms_id] => 3f4cc254-1773-11f0-0a80-0ed1003386f0
+)
+
+GET Parameters: Array
+(
+    [id] => 44
+)
+
+Raw POST Data: {"status":"Собран","ms_id":"a4c49049-176e-11f0-0a80-002f0034f177"}
+Decoded Data: Array
+(
+    [status] => Собран
+    [ms_id] => a4c49049-176e-11f0-0a80-002f0034f177
+)
+
+GET Parameters: Array
+(
+    [id] => 52
+)
+
+Raw POST Data: {"status":"Подтвержден","ms_id":"77d2cd0d-1779-11f0-0a80-0c670036987e"}
+Decoded Data: Array
+(
+    [status] => Подтвержден
+    [ms_id] => 77d2cd0d-1779-11f0-0a80-0c670036987e
+)
+
+GET Parameters: Array
+(
+    [id] => 42
+)
+
+Raw POST Data: {"status":"Отгружен","ms_id":"cec25146-176d-11f0-0a80-002f0034c25b"}
+Decoded Data: Array
+(
+    [status] => Отгружен
+    [ms_id] => cec25146-176d-11f0-0a80-002f0034c25b
+)
+
+GET Parameters: Array
+(
+    [id] => 43
+)
+
+Raw POST Data: {"status":"Подтвержден","ms_id":"e068fbf9-176d-11f0-0a80-0f5100336934"}
+Decoded Data: Array
+(
+    [status] => Подтвержден
+    [ms_id] => e068fbf9-176d-11f0-0a80-0f5100336934
+)
+
